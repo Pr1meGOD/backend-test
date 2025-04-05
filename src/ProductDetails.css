@@ -1,0 +1,105 @@
+/* .redlabel {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to right, #ed1c24 20%, #b7202e 20%);
+    margin-top: 60px;
+}
+.remaining_part_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_remaining_container{
+    width: 40%;
+    padding: 30px;
+}
+
+.photo_container_my_list {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px;
+    border: 2px solid black;
+    height: 100%; 
+}
+
+#my_listing_image {
+    width: 100%;  
+    height: auto; 
+    max-height: 60vh;
+}
+
+.right_remaining_container{
+    width: 40%;
+    
+    margin-top: 60px;
+}
+
+.my_list_data_container{
+    border: 2px solid black;
+    padding: 50px;
+}
+
+#delete_post_btn , #edit_post_btn{
+    margin: 10px;
+}
+ */
+
+
+ .remaining_part_container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping for the third container */
+    justify-content: space-between; /* Creates space between the left and right containers */
+    align-items: flex-start; /* Aligns items at the top */
+    overflow-y:visible ;
+}
+
+.left_remaining_container,
+.right_remaining_container {
+    width: 48%; /* Adjust width to fit side by side */
+    padding: 20px;
+}
+
+.photo_container_my_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    height: auto; /* Adjusted to auto for better scaling */
+}
+
+#my_listing_image {
+    width: 70%;
+    height: auto;
+    max-height: 60vh;    
+}
+
+.right_remaining_container {
+    margin-top: 0; /* Removes unnecessary margin */
+}
+
+.my_list_data_container {
+    border: 2px solid black;
+    padding: 50px;
+}
+
+#delete_post_btn, #edit_post_btn {
+    margin: 10px;
+}
+
+.other_qs_details {
+    display: block;
+    margin: auto;
+    width: 50%; 
+    margin-top: 5px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#yes_btn, #no_btn {
+    margin: 10px;
+    font-weight: bold;
+    padding: 8px 16px;
+}

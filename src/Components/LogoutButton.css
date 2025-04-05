@@ -1,0 +1,13 @@
+#logout_button_new{
+    width: 200px;
+    background: #b30101;
+    border: none;
+    
+    /* border: none; */
+}
+
+#logout_button_new:hover{
+    background: transparent;
+    border: 2px solid #ffffff;
+    /* border: none; */
+}

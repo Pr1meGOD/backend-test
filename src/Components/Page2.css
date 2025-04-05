@@ -1,0 +1,267 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.left_side_container, .login_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dava_container {
+    width: 40%;
+    background-image: url("../Assets/register_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 4%;
+}
+
+.login-container {
+    overflow: hidden;
+    min-width: 0; 
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin-top: 50px;
+    border: none; 
+    padding: 20px;
+    box-shadow: -8px -2px 16px 4px #00000069;
+    background: #f0f0f036;
+    margin-top: 5%;
+    width: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: auto; /* Change from 100% to auto */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.bg {
+    min-height: 100vh; /* Ensure it takes at least the full height of the screen */
+    height: auto; /* Let it grow as needed */
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.dava_container {
+    min-height: 10vh; /* Ensure it takes at least full screen height */
+    height: auto; /* Let it expand naturally */
+}
+
+.email_input, #branch {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: 200px !important;
+    padding: 8px !important;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: border-bottom 0.2s ease-in-out !important;
+}
+
+#student_id_input , #name_input{
+    flex: 1; /* Makes both inputs take equal space */
+    width: auto !important; /* Overrides previous width settings */
+    max-width: none !important;
+    /*  */
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: 200px !important;
+    padding: 8px !important;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: border-bottom 0.2s ease-in-out !important;
+}
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .form-row .col-md-6 {
+        flex: 1;
+        min-width: 200px; 
+        max-width: 48%; 
+    }
+    
+
+.email_input::placeholder, .password_input::placeholder {
+    padding: 5px;
+    font-family: "Raleway", serif;
+    color: gray;
+    font-size: 16px;
+}
+
+.email_input:focus, .password_input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    box-shadow: none;
+}
+
+.email_label, .password_label {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+
+.login_container_cover{
+    width: 50%;
+}
+
+#welcome_text {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    font-size: 25px;
+}
+
+#login_text {
+    font-size: 42px;
+}
+
+#p1_b1 {
+    /* margin-top: 15px; */
+    padding: 10px;
+    width: 80px;
+    font-size: 16px;
+}
+
+#l1 {
+    color: #ad0000;
+    margin-left: 5px;
+}
+
+#p2_sendLinkBtn, #p2_b1 {
+    margin: 10px;
+    padding: 10px;
+    background: gray;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#redirect{
+    margin-bottom: 20px;
+}
+
+#l2{
+    color: #ad0000;
+    margin-left: 5px;
+}
+
+.redlabel {
+    height: 50px !important;
+    width: 100%;
+    background: linear-gradient(to right, #ed1c24 20%, #b7202e 20%);
+    /* margin-top: 84px;  */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    html, body {
+        overflow-y: visible;
+    }
+
+    .bg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dava_container{
+        width: 100%;
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .login-container_cover{
+        width: 90%;
+        margin-top: 0;
+        padding: 15px;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    #login_text {
+        font-size: 32px;
+    }
+
+    .email_input, .password_input {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .text-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login_container_cover{
+        width: 80%;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    #student_id_input, #name_input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #login_text {
+        font-size: 28px;
+    }
+
+    #welcome_text {
+        font-size: 18px;
+    }
+
+    .email_label, .password_label {
+        font-size: 16px;
+    }
+
+    #p1_b1 {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
