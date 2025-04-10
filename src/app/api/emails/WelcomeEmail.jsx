@@ -17,19 +17,19 @@ export const WelcomeEmail = ({ userFirstname = 'User' }) => (
     <Head />
     <Body style={main}>
       <Preview>
-        Welcome to the K.J. Somaiya Lost & Found Portal!
+        Welcome to the Lost & Found Portal!
       </Preview>
       <Container style={container}>
         <Img
           src="https://i.imgur.com/p09fAA0.png" 
           width="170"
           height="50"
-          alt="K.J. Somaiya Lost & Found Portal"
+          alt="Lost & Found Portal"
           style={logoStyle}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Welcome to the <strong>K.J. Somaiya Lost & Found</strong>—your go-to platform for reporting and finding lost items on campus. Whether you’ve misplaced something or found an unclaimed item, our website makes it easy to connect with the right people and reunite belongings with their owners.
+          Welcome to the <strong>Lost & Found</strong>—your go-to platform for reporting and finding lost items on campus. Whether you’ve misplaced something or found an unclaimed item, our website makes it easy to connect with the right people and reunite belongings with their owners.
         </Text>
         <Text style={paragraph}>
           Start by posting a lost or found item now and help keep our community connected!
@@ -56,7 +56,7 @@ export const WelcomeEmail = ({ userFirstname = 'User' }) => (
         <Text style={paragraph}>
           Happy searching,
           <br />
-          <strong>The K.J. Somaiya Lost & Found Team</strong>
+          <strong>The Lost & Found Team</strong>
         </Text>
         <Hr style={hr} />
       </Container>

@@ -14,7 +14,7 @@ export async function POST(request) {
 
 // In route.js
 const { data, error } = await resend.emails.send({
-  from: 'KJ Lost & Found <noreply@kjslaf.xyz>',
+  from: 'KJSLAF <noreply@kjslaf.xyz>',
   to: email,
   subject: 'Your KJSLAF account is ready!',
   html: emailHtml,
